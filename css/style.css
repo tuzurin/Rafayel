@@ -99,6 +99,7 @@ p {
 }
 
 
+
 ul li {
     font-size: 1.3em;
 }
@@ -147,6 +148,17 @@ iframe {
     margin: 0;
 }
 
+.textH {
+    display: none;
+}
+
+.textPC {
+    display: inline;
+}
+
+#slider p span {
+    color: #8f8f8f;
+}
 
 /*==================================================
  Transitional elements
@@ -896,20 +908,31 @@ i[class^="icon-"] {
 }
 
 @media (max-width:767px) {
+
+
     h1 {
         line-height: 41px;
     }
 
     h1 span {
-        font-size: 30px;
+        font-size: 26px;
         line-height: 0;
     }
 
+    .textH {
+        display: block;
+    }
+
+    .textPC {
+        display: none;
+    }
 
 
     #slider .item h2 {
         font-size: 20px;
-        line-height: 28px;
+        line-height: 18px;
+        margin-top: 25px;
+        margin-bottom: 25px;
     }
 
     .in_slider {
